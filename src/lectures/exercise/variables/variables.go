@@ -25,4 +25,29 @@ package main
 import "fmt"
 
 func main() {
+    fmt.Println("Hello!")
+
+    var favColor = "Blue";
+
+    var birthYear, age = 1992, 30
+    var (
+        initialFirst string = "S"
+        initialLast string = "J"
+    )
+
+    var ageDays int
+    ageDays = 365 * age
+
+    // Print info
+    // fmt.Sprintf("%s. %s. (%s, age: %s, days old: %s, fav color: %s)", initialFirst, initialLast, age, birthYear, ageDays, favColor)
+
+    fmt.Println(initialFirst)
+    fmt.Println(initialLast)
+
+    fmt.Println(favColor)
+    fmt.Println(birthYear)
+    fmt.Println(age)
+    fmt.Println(ageDays)
+
+    fmt.Println("Done!")
 }
