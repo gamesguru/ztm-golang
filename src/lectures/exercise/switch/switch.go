@@ -13,5 +13,26 @@ package main
 
 import "fmt"
 
+func age_check(age int) {
+	fmt.Print("Age ", age, " -> ")
+	switch {
+	case age == 0:
+		fmt.Println("newborn")
+	case age < 4:
+		fmt.Println("toddler")
+	case age < 13:
+		fmt.Println("child")
+	case age < 18:
+		fmt.Println("teenager")
+	case age >= 18:
+		fmt.Println("adult")
+	default:
+		fmt.Println("UNKNOWN")
+	}
+}
+
 func main() {
+	for i := 0; i < 40; i++ {
+		age_check(i)
+	}
 }
